@@ -8,4 +8,4 @@ gcc -g -fPIC -shared -o NumLib.so LinearAlgebra/Implementation_Files/LinearAlgeb
 ```
 
 ## Description
- All the folders, except for *Interactable_Files*, serve as the foundation of the project. All calculations, file readings/writings, I/O, etc. are computed in these files. These files were created to be extendable and reusable to an extent. To be able to interact with the Python GUI script, the *Interactable_Files* was created to act as in intermediary between the raw C code and the Python script.
+ All the folders, except for *Interactable_Files*, serve as the foundation of the project. All calculations, file readings/writings, I/O, etc. are computed in these files. These files were created to be extendable and reusable to an extent. The *MainApp.py* Python script only serves as the framework for user interface, as all the computations are performed in C. To be able to interact with the Python GUI script, the *Interactable_Files* was created to act as in intermediary between the raw C code and the Python script. 
