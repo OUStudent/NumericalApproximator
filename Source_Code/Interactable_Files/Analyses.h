@@ -30,4 +30,7 @@ Matrix *analyses_factorGetPsi();
 Matrix *analyses_factorGetResiduals();
 Matrix *analyses_factorGetSpecificVariances();
 
+Matrix *analyses_clusterCor(Matrix *data);
+void analyses_clusterDestructor();
+
 #endif // ANALYSES_H
