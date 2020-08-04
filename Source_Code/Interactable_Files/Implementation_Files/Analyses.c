@@ -120,3 +120,14 @@ Matrix *analyses_factorGetResiduals() {
 Matrix *analyses_factorGetSpecificVariances() {
     return myFacta->specificVariances;
 }
+
+Matrix *clusterCor;
+
+Matrix *analyses_clusterCor(Matrix *data) {
+	clusterCor = multi_correlation(data, NULL);
+	return clusterCor;	
+}
+
+void analyses_clusterDestructor() {
+	matrix_destructor(&clusterCor);
+}
